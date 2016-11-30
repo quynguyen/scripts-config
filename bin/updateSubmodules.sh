@@ -1,9 +1,3 @@
-#!/bin/sh
-function updateSub()
-{
-	git submodule init
-	git submodule foreach git pull origin master
-	git submodule update
-}
+#!/bin/bash
 
-git submodule foreach --recursive updateSub()
+git submodule foreach --recursive git submodule update --init
