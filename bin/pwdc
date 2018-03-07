@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ]; then
 	pwd | pbcopy
 else
 	pwd | xsel -i -b
