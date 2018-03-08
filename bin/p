@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 lib=$ENV/.submodules/shell-config/common/core
 [ -f $lib ] || exit "No lib $lib"
