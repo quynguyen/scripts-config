@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grep -v -f ~/.bb/dbs-exclude ~/.bb/dbs-all
