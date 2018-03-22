@@ -15,4 +15,4 @@ if [ ! -f "$CERT_FILE" ]; then
 	exit -1
 fi
 
-fetchpass | sudo $CMD --user=qnguyen@central1.com --protocol=gp remote.central1.com --certificate $CERT_FILE --key-password=$KEY
+fetchpass | sudo $CMD --user=qnguyen --protocol=gp remote.central1.com --certificate $CERT_FILE --key-password=$KEY
