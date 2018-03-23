@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ -z "$1" ]] && echo "$0 feature [version]" && exit -1
+[ -z "$1" ] && echo "$(basename $0) feature [version]" && exit -1
 
 feature=$1
 version=${2:-"0.0.0.0.0-SNAPSHOT"}
