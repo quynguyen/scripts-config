@@ -1,4 +1,4 @@
 #!/bin/sh
 
-TEMPFILE=/tmp/$(mktemp -u XXXX) && pbpaste | json_pp >$TEMPFILE && echo $TEMPFILE
+TEMPFILE=/tmp/$(mktemp -u XXXX).json && pbpaste | json_pp >$TEMPFILE && echo $TEMPFILE
 nvim $TEMPFILE
